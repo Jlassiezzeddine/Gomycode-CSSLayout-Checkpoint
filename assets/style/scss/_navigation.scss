@@ -1,0 +1,18 @@
+.desktop--navbar--wrapper {
+  position: fixed;
+  width: 100%;
+  height: 4rem;
+  background-color: antiquewhite;
+}
+nav.desktop--navbar {
+  width: 100%;
+  height: 100%;
+  max-width: 1015px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  .navbar--list {
+    display: flex;
+    list-style: none;
+  }
+}
