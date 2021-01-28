@@ -25,7 +25,7 @@
   <body>
     <header>
       <!--Desktop Navbar-->
-      <div class="desktop--navbar--wrapper">
+      <div class="desktop--navbar--wrapper sticky-nav">
         <nav class="desktop--navbar">
           <div class="desktop--navbar--logo">
             <img
@@ -35,10 +35,12 @@
             />
           </div>
           <ul class="navbar--list">
-            <li class="navbar--item"><a href="index.html">About us</a></li>
+            <li class="navbar--item active">
+              <a href="index.html">About us</a>
+            </li>
             <li class="navbar--item"><a href="career.html">Career</a></li>
             <li class="navbar--item">
-              <a href="departments.html">departments</a>
+              <a href="departments.html">Departments</a>
             </li>
           </ul>
           <div class="desktop--navbar--burger">
@@ -49,6 +51,32 @@
         </nav>
       </div>
       <!--Mobile Navbar-->
+      <div class="mobile--navbar--wrapper sticky-nav">
+        <nav class="mobile--navbar">
+          <div class="mobile--navbar--logo">
+            <img
+              width="140px"
+              src="assets/images/logo-default-group-en.svg"
+              alt=""
+            />
+          </div>
+          <input type="checkbox" name="burger-btn" id="burger-btn" hidden />
+          <label for="burger-btn" class="mobile--navbar--burger"
+            ><span class="navbar--burger--btn"></span
+          ></label>
+          <div class="navbar--list--wrapper">
+            <ul class="navbar--list">
+              <li class="navbar--item">
+                <a href="index.html">About us</a>
+              </li>
+              <li class="navbar--item"><a href="career.html">Career</a></li>
+              <li class="navbar--item">
+                <a href="departments.html">Departments</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
     </header>
     <main></main>
     <footer></footer>
