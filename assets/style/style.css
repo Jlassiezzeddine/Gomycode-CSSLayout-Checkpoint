@@ -168,9 +168,13 @@ p {
 
 .desktop--navbar--wrapper {
   position: fixed;
+  z-index: 99;
+  top: 0;
+  left: 0;
   width: 100%;
   padding: 0 4rem;
   height: 4rem;
+  background-color: #fff;
 }
 
 nav.desktop--navbar {
@@ -230,9 +234,13 @@ nav.desktop--navbar .navbar--list .dropdown-content li a {
 .mobile--navbar--wrapper {
   display: none;
   position: fixed;
+  top: 0;
+  left: 0;
   width: 100%;
   padding: 0 10%;
   height: 4rem;
+  z-index: 99;
+  background-color: #fff;
 }
 
 nav.mobile--navbar {
@@ -346,6 +354,109 @@ a {
 
 a:hover {
   color: #00b39b;
+}
+
+.container {
+  max-width: 1015px !important;
+}
+
+/*
+===============================
+            Layout
+===============================
+*/
+/* Section Lead */
+#lead {
+  margin-top: 6rem;
+}
+#lead .lead--title--wrapper {
+  padding-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#lead .lead--title--wrapper h1 {
+  color: #00b39b;
+  text-align: center;
+  margin: 2rem 0;
+  font-weight: 300;
+}
+#lead p {
+  margin-top: 2.5rem;
+  line-height: 1.75;
+  font-weight: 400;
+  color: #747474;
+}
+
+/* Section Services */
+#services {
+  margin-top: 6rem;
+}
+#services .service--card {
+  height: 345px;
+  border-radius: 10px;
+  padding: 2em 2em 0;
+  color: #fff;
+}
+#services .service--card img {
+  width: 24px;
+}
+#services .service--card h3 {
+  margin-top: 1rem;
+  font-weight: 300;
+}
+#services .service--card h4 {
+  margin-top: 1rem;
+  font-weight: 200;
+  line-height: 1.2;
+}
+#services .service--card select {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  color: #fff;
+  font-size: 1rem;
+  margin-top: 6rem;
+}
+#services .service--card__patients {
+  background-color: #00b39b;
+}
+#services .service--card__doctors {
+  background-color: #3d83df;
+}
+#services .service--card__clinics {
+  background-color: #1b2734;
+}
+
+/* Section Brands */
+#brand {
+  margin-top: 6rem;
+}
+#brand h3 {
+  color: #00b39b;
+  line-height: 1.3;
+  font-weight: 300;
+}
+#brand .brands--container li {
+  display: inline-block;
+  width: 160px;
+  padding: 5px 0;
+}
+#brand .brands--container a svg {
+  height: 20px;
+  width: auto;
+  fill: rgba(171, 171, 171, 0.7);
+}
+#brand .brands--container a:hover svg {
+  fill: #00b39b;
+}
+#brand .brands--container a img {
+  filter: invert(98%) sepia(2%) saturate(0) hue-rotate(180deg) brightness(300%) contrast(0);
+  opacity: 0.55;
+}
+#brand .brands--container a:hover img {
+  filter: none;
+  opacity: 1;
 }
 
 /*# sourceMappingURL=style.css.map */

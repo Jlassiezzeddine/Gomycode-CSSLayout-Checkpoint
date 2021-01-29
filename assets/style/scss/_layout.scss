@@ -1,3 +1,104 @@
-section#lead {
+/*
+===============================
+            Layout
+===============================
+*/
+
+/* Section Lead */
+#lead {
   margin-top: 6rem;
+  .lead--title--wrapper {
+    padding-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    h1 {
+      color: $primary;
+      text-align: center;
+      margin: 2rem 0;
+      font-weight: 300;
+    }
+  }
+
+  p {
+    margin-top: 2.5rem;
+    line-height: 1.75;
+    font-weight: 400;
+    color: $grey;
+  }
+}
+
+/* Section Services */
+#services {
+  margin-top: 6rem;
+  .service--card {
+    height: 345px;
+    border-radius: 10px;
+    padding: 2em 2em 0;
+    color: $light;
+    img {
+      width: 24px;
+    }
+    h3 {
+      margin-top: 1rem;
+      font-weight: 300;
+    }
+    h4 {
+      margin-top: 1rem;
+      font-weight: 200;
+      line-height: 1.2;
+    }
+    select {
+      background-color: transparent;
+      border: none;
+      outline: none;
+      color: $light;
+      font-size: 1rem;
+      margin-top: 6rem;
+    }
+  }
+  .service--card__patients {
+    background-color: $primary;
+  }
+  .service--card__doctors {
+    background-color: $blue;
+  }
+  .service--card__clinics {
+    background-color: $dark-blue;
+  }
+}
+
+/* Section Brands */
+
+#brand {
+  margin-top: 6rem;
+  h3 {
+    color: $primary;
+    line-height: 1.3;
+    font-weight: 300;
+  }
+  .brands--container {
+    li {
+      display: inline-block;
+      width: 160px;
+      padding: 5px 0;
+    }
+    a svg {
+      height: 20px;
+      width: auto;
+      fill: hsla(0, 0%, 67%, 0.7);
+    }
+    a:hover svg {
+      fill: $primary;
+    }
+    a img {
+      filter: invert(98%) sepia(2%) saturate(0) hue-rotate(180deg)
+        brightness(300%) contrast(0);
+      opacity: 0.55;
+    }
+    a:hover img {
+      filter: none;
+      opacity: 1;
+    }
+  }
 }

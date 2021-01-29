@@ -1,8 +1,12 @@
 .desktop--navbar--wrapper {
   position: fixed;
+  z-index: 99;
+  top: 0;
+  left: 0;
   width: 100%;
   padding: 0 4rem;
   height: 4rem;
+  background-color: $light;
 }
 nav.desktop--navbar {
   width: 100%;
@@ -61,9 +65,13 @@ nav.desktop--navbar {
 .mobile--navbar--wrapper {
   display: none;
   position: fixed;
+  top: 0;
+  left: 0;
   width: 100%;
   padding: 0 10%;
   height: 4rem;
+  z-index: 99;
+  background-color: $light;
 }
 nav.mobile--navbar {
   width: 100%;
@@ -72,6 +80,7 @@ nav.mobile--navbar {
   margin: 0 auto;
   display: flex;
   align-items: center;
+
   .mobile--navbar--burger {
     cursor: pointer;
     padding: 16px 0px;
