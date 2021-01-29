@@ -1,0 +1,19 @@
+@media screen and (max-width: 991px) {
+  #services .service--card {
+    margin-bottom: 2rem;
+  }
+  #stats::after {
+    content: "";
+    display: none;
+    position: absolute;
+    left: 0;
+    bottom: -120px;
+    background: url(/assets/images/logos/logo.png) no-repeat;
+    width: 456px;
+    height: 435px;
+    pointer-events: none;
+  }
+  .brands--container {
+    margin-top: 2rem;
+  }
+}
