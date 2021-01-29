@@ -442,6 +442,14 @@ a:hover {
   width: 160px;
   padding: 5px 0;
 }
+#brand .brands--container li:nth-child(7), #brand .brands--container li:nth-child(8) {
+  width: 85px !important;
+}
+#brand .brands--container a {
+  padding: 5px 0;
+  display: flex;
+  align-items: center;
+}
 #brand .brands--container a svg {
   height: 20px;
   width: auto;
@@ -457,6 +465,176 @@ a:hover {
 #brand .brands--container a:hover img {
   filter: none;
   opacity: 1;
+}
+
+/* Section Stats */
+#stats {
+  position: relative;
+  margin-top: 6rem;
+  background-color: #e5faf8;
+  padding: 1rem 0;
+  overflow: hidden;
+}
+#stats h1 {
+  color: #00b39b;
+  margin-top: 2em;
+  font-weight: 300;
+  line-height: 1.3;
+  letter-spacing: -0.3px;
+}
+#stats p {
+  margin-top: 2rem;
+  line-height: 1.2;
+  color: #747474;
+}
+#stats .stat--card {
+  background: #fff;
+  border-radius: 5px;
+  box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.05);
+  height: 250px;
+  text-align: center;
+  padding: 30px 15px;
+  margin: 1.5rem 0;
+}
+#stats .stat--card h3 {
+  color: #00b39b;
+  margin: 1em 0 0.5em 0;
+  font-weight: 300;
+  line-height: 1.3;
+}
+#stats .stat--card p {
+  font-size: 0.8125em;
+  margin-top: 0;
+}
+#stats::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -120px;
+  background: url(/assets/images/logos/logo.png) no-repeat;
+  width: 456px;
+  height: 435px;
+  pointer-events: none;
+}
+
+/* Section Offices */
+#offices {
+  margin-top: 6rem;
+}
+#offices h3 {
+  font-size: 2.1428571429em;
+  color: #00b39b;
+  line-height: 1.3;
+  text-align: center;
+}
+#offices p {
+  margin: 1.6rem auto;
+  max-width: 490px;
+  text-align: center;
+  font-size: 0.875em;
+  font-weight: 400;
+  color: #747474;
+  line-height: 1.7142857143;
+}
+#offices .office--card--container {
+  margin-top: 3rem;
+}
+#offices .office--card--container .office--card {
+  border-radius: 6px;
+  margin: 0.8rem 0;
+  border: 1px solid rgba(0, 0, 0, 0.03);
+  transition: box-shadow 0.2s ease-in-out;
+  overflow: hidden;
+}
+#offices .office--card--container .office--card:hover {
+  box-shadow: 0 20px 50px 0 rgba(0, 0, 0, 0.13);
+  transition: box-shadow 0.2s ease-in-out;
+}
+#offices .office--card--container .office--card .office--card--img {
+  width: 100%;
+  height: auto;
+}
+#offices .office--card--container .office--card .office--card--img img {
+  width: 100%;
+  height: 100%;
+}
+#offices .office--card--container .office--card .office--card--footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 0.5rem;
+}
+#offices .office--card--container .office--card .office--card--footer .office--card--button {
+  background-color: #3d83df;
+  padding: 0.5rem 0.5rem;
+  color: #fff;
+  border-radius: 6px;
+  font-size: 0.7em;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+#offices .office--card--container .office--card .office--card--footer .office--card--button:hover {
+  background-color: #1d5eb2;
+  transition: background-color 0.3s ease-in-out;
+}
+
+/* Join Us Section */
+#join-us {
+  margin-top: 6rem;
+  margin-bottom: 6rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#join-us h1 {
+  font-weight: 300;
+  color: #111111;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+#join-us button {
+  background-color: #3d83df;
+  padding: 1rem 1.5rem;
+  color: #fff;
+  border-radius: 4px;
+  font-size: 0.8em;
+  text-transform: uppercase;
+  font-weight: 600;
+  max-width: fit-content;
+}
+#join-us button:hover {
+  background-color: #1d5eb2;
+  transition: background-color 0.3s ease-in-out;
+}
+
+/* Footer */
+footer {
+  border-top: 1px solid #eef2f2;
+  padding: 1.5rem 0 1rem 0;
+  color: #ababab;
+  font-weight: 400;
+}
+footer .footer--inner {
+  zoom: 1;
+  max-width: 1015px;
+  padding: 0 20px;
+  margin: 0 auto;
+  position: relative;
+}
+footer .footer--inner p {
+  font-size: 12px;
+  text-align: center;
+  margin: 0.5rem 0;
+}
+footer .footer--inner p:nth-child(1) {
+  margin: 1rem 0 1.5rem 0;
+}
+footer .footer--inner p a {
+  color: #3d83df;
+}
+footer .footer--inner p a:hover {
+  text-decoration: underline;
 }
 
 /*# sourceMappingURL=style.css.map */
